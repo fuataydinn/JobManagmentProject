@@ -11,6 +11,6 @@ Proje detayları ;
 * Model klasoru içerisinde Context sınıfı olusturularak veri tabanına map işlemi gerçekleştirildi, burada;   
   * DbSet<T> : Entity ile database table arasındaki ilişki ,
   * OnmodelCreating Metodu : Ayrı klasörde olusturulan FluentApi configrasyonları bu metod içerisinde cagrılır.
-  * OnConfigure Metodu : Bu metod ile SqlConnectionString ile veri tabanına bağlantı gerçekleştirdik.
+  * OnConfiguring Metodu : Bu metod ile SqlConnectionString ile veri tabanına bağlantı gerçekleştirdik.
 * EF ile **Migrationlar** olusturulur ve bu migrationlar **Update** edilerek Entitylerimizi veri tabanına aktardık.
 * En son olarak proje gereksinimleri olarak Business Kuralları yazıldı.
